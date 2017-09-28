@@ -1,17 +1,12 @@
 import dash
-import custom_basic_auth
+import wechat_auth
 import dash_html_components as html
 import dash_core_components as dcc
 import plotly
 
-# Keep this out of source code repository - save in a file or a database
-def authenticate(username, password):
-    return (username == '1' and password == '2')
-
 app = dash.Dash('auth')
-auth = custom_basic_auth.CustomBasicAuth(
-    app,
-    authenticate
+auth = wechat_auth.WechatAuth(
+    app
 )
 
 app.layout = html.Div([
