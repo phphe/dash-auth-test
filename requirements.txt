@@ -8,7 +8,7 @@ click==6.7
 compizconfig-python==0.9.12.2
 configglue==1.1.2
 configobj==5.0.6
-cryptography==1.2.3
+cryptography==3.2
 dash==0.17.8rc2
 dash-auth==0.0.4
 dash-core-components==0.12.7
